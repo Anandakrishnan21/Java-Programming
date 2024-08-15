@@ -1,11 +1,10 @@
-package java_course;
 import java.util.Scanner;
 
 public class CharacterLength {
 
     public static void main(String[] args) {
         System.out.print("Enter the input string:");
-;        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
         int i = 0;
         while(i < input.length()) {
