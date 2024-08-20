@@ -1,6 +1,4 @@
-
 public class SelectionSort {
-
     public static void main(String[] args) {
         int[] arr = { 5, 1, 4, 9, 6, 2, 10, 2 };
         System.out.print("Unsorted Array: ");
@@ -9,16 +7,16 @@ public class SelectionSort {
         }
         System.out.println();
 
-        int[] sorted = SelectionSort.Selection(arr);
+        Selection(arr);
 
         System.out.print("Sorted Array: ");
-        for (int i : sorted) {
+        for (int i : arr) {
             System.out.print(i + " ");
         }
         System.out.println();
     }
 
-    public static int[] Selection(int[] arr) {
+    public static void Selection(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
             int min = i;
             for (int j = i + 1; j < arr.length; j++) {
@@ -30,6 +28,5 @@ public class SelectionSort {
             arr[min] = arr[i];
             arr[i] = temp;
         }
-        return arr;
     }
 }
